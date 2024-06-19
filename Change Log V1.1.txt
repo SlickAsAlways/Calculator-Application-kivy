@@ -1,0 +1,9 @@
+v 1.1. change log & bug-fixes :
+
+1. Updated the GUI to be more appealing with a more simple layout
+
+2. Added colour to the background to make it stand out more
+
+3. Calculation now displays a result 
+
+4. Logo has been added

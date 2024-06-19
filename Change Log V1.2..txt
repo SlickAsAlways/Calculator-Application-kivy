@@ -1,0 +1,13 @@
+v 1.2. change log & bug-fixes :
+
+1. More GUI has been added allowing more functionality 
+
+2. Logos and colour have been added for a more appealing look 
+
+3. Buttons and layout have been adjusted for easier navigation
+
+4. "Games" have been added allowing you to participate in fun activities
+
+5. Questions have been added to test your knowledge 
+
+6. Logo has been updated to look more aesthetically pleasing 

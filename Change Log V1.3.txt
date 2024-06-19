@@ -1,0 +1,13 @@
+v 1.3. change log & bug-fixes :
+
+1. Switched over from Tkinter to Kivy 
+
+2. Updated UI 
+
+3. Games tab now opens within the app and not as a separate window 
+
+4. Background has been updated from a standard colour to an image making it stand out more
+
+5. Fixed the calculation not showing a result so it now shows the right result
+
+6. increased the size of the GUI to make it more easy to navigate around.
