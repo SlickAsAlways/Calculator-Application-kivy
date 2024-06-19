@@ -1,0 +1,185 @@
+<MainScreen>:
+    CalculatorLayout:
+
+<OtherScreen>:
+
+
+<BackgroundLayout>:
+
+    CalculatorLayout:
+        id: calc_layout
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+        background_color: 1, 1, 1, 1
+    Label:
+        id: result_label
+        text: ""
+        color: 1, 1, 1, 1
+
+    Button:
+        id: theme_switcher
+        text: "Switch to Dark Theme"
+        font_size: 30
+        size_hint: None, None
+        size: 300, 50
+        on_press: app.switch_theme()
+
+<CalculatorLayout@BoxLayout>:
+
+    Label:
+        id: result_label
+        text: ""
+        color: 225,0,132,0
+
+<CalculatorLayout@BoxLayout>:
+
+    Spinner:
+        id: operation_spinner
+        text: '|||'
+        values: ['About', 'Games', 'Quiz', 'More']
+        size_hint: None, None
+        size: 100, 50
+        on_text: app.on_spinner_select(self.text)
+
+    Image:
+        source: 'C:\\Users\\Brandon\\Downloads\\logo.png'
+        size_hint: None, None
+        size: 500, 350
+        pos_hint: {'center_x': 0.5}
+
+    Label:
+        text: "Number 1"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    TextInput:
+        id: num1_input
+        hint_text: "Enter number 1"
+        font_size: 30
+        multiline: False
+
+    Label:
+        text: "Number 2"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    TextInput:
+        id: num2_input
+        hint_text: "Enter number 2"
+        font_size: 30
+        multiline: False
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+    Label:
+        text: "Result"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    Button:
+        text: "Add"
+        font_size: 30
+        background_normal: ''
+        background_color: (0.2, 0.6, 1, 1)  # Light blue color for the button
+        on_press: app.add(num1_input.text, num2_input.text)
+        bold: True
+
+    Button:
+        text: "Subtract"
+        font_size: 30
+        background_normal: ''
+        background_color: (0.2, 0.6, 1, 1)  # Light blue color for the button
+        on_press: app.subtract(num1_input.text, num2_input.text)
+        bold: True
+
+    Button:
+        text: "Multiply"
+        font_size: 30
+        background_normal: ''
+        background_color: (0.2, 0.6, 1, 1)  # Light blue color for the button
+        on_press: app.multiply(num1_input.text, num2_input.text)
+        bold: True
+
+    Button:
+        text: "Divide"
+        font_size: 30
+        background_normal: ''
+        background_color: (0.2, 0.6, 1, 1)  # Light blue color for the button
+        on_press: app.divide(num1_input.text, num2_input.text)
+        bold: True
+
+
+
+    Label:
+        id: result_label
+        text: ""
+        markup: True  # Enable markup
+        font_size: 30
+        color: 225,0,132,0
+        bold: True
+
+
+    Label:
+        text: "Why not try out some questions?"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    Label:
+        text: "Question 1"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    Label:
+        text: "What is 456 - 125?"
+        font_size: 30
+        color: 0.012, 1, 0, 1
+        bold: True
+
+    TextInput:
+        id: answer_input1
+        hint_text: "Enter your answer"
+        font_size: 30
+        multiline: False
+
+    Button:
+        text: "Check Answer"
+        font_size: 30
+        on_press: app.check_answer(answer_input1.text, "331")
+        bold: True
+
+    Label:
+        text: "Question 2"
+        font_size: 30
+        color: 1, 1, 1, 1
+        bold: True
+
+    Label:
+        text: "What is 700 x 235?"
+        font_size: 30
+        color: 0.012, 1, 0, 1
+        bold: True
+
+
+    TextInput:
+        id: answer_input2
+        hint_text: "Enter your answer"
+        font_size: 30
+        multiline: False
+
+    Button:
+        text: "Check Answer"
+        font_size: 30
+        on_press: app.check_answer(answer_input2.text, "164500")
+        bold: True  
+
+<CalculatorLayout>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
