@@ -1,0 +1,99 @@
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.relativelayout import RelativeLayout
+from kivy.core.audio import SoundLoader
+import os
+
+
+class BackgroundLayout(RelativeLayout):
+    pass
+
+
+class CalculatorLayout(BoxLayout):
+    pass
+
+
+def play_sound():
+    sound_path = os.path.join(os.path.dirname(__file__), 'click.wav')
+    sound = SoundLoader.load(sound_path)
+    if sound:
+        sound.play()
+    else:
+        print("Unable to load sound file")
+
+
+class CalculatorApp(App):
+    def __init__(self):
+        super().__init__()
+        self.layout = None
+        self.theme = 'light'
+
+    def build(self):
+        self.layout = BackgroundLayout()
+        return self.layout
+
+    def switch_theme(self):
+
+        if self.theme == 'light':
+            self.theme = 'dark'
+            self.root.ids.theme_switcher.text = 'Switch to Light Theme'
+
+        else:
+            self.theme = 'light'
+            self.root.ids.theme_switcher.text = 'Switch to Dark Theme'
+
+    def update_result_label(self, result, is_correct=None):
+        # Enable markup for the result_label
+        self.root.ids.result_label.markup = True
+
+
+        if is_correct is True:
+            self.root.ids.result_label.text = '[color=00ff00]Correct![/color]'
+        elif is_correct is False:
+            self.root.ids.result_label.text = '[color=FF0000]Incorrect.[/color]'
+        else:
+            # Reset to default color if no correctness is provided
+            self.root.ids.result_label.text = str(result)
+
+    def check_answer(self, answer, correct_answer):
+        # This method will check if the provided answer is correct
+        is_correct = answer == correct_answer
+        self.update_result_label(answer, is_correct)
+
+    def add(self, num1, num2):
+        try:
+            result = float(num1) + float(num2)
+            self.update_result_label(result)
+        except ValueError:
+            self.update_result_label("Error", is_correct=False)
+
+    def subtract(self, num1, num2):
+        try:
+            result = float(num1) - float(num2)
+            self.update_result_label(result)
+        except ValueError:
+            self.update_result_label("Error", is_correct=False)
+
+    def multiply(self, num1, num2):
+        try:
+            result = float(num1) * float(num2)
+            self.update_result_label(result)
+        except ValueError:
+            self.update_result_label("Error", is_correct=False)
+
+    def divide(self, num1, num2):
+        try:
+
+            if float(num2) == 0:
+                self.update_result_label("Cannot divide by zero", is_correct=False)
+            else:
+                result = float(num1) / float(num2)
+                self.update_result_label(result)
+        except ValueError:
+            self.update_result_label("Error", is_correct=False)
+
+
+
+
+if __name__ == '__main__':
+    CalculatorApp().run()
