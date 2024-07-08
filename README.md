@@ -29,8 +29,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="file:/C:/Users/Brandon/Desktop/Screenshot%202024-07-08%20130332.png" alt="Logo" width="80" height="80">
+  <a href="![image](https://github.com/SlickAsAlways/Calculator-Application-kivy/assets/71338902/71bdfb8e-48e6-4a59-b6d6-7707403018b9)
+">
+    <img src="![image](https://github.com/SlickAsAlways/Calculator-Application-kivy/assets/71338902/f2d06bcf-e965-4fcd-9c77-aaf2c19ea16f)
+" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Easy Calculator</h3>
