@@ -83,7 +83,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-I wanted to create a simple calculator application that is easy to navigate around and use i coded the application in python and switched to tkinter and then kivy.
+I wanted to create a simple calculator application that is easy to navigate around and use i coded the application in python and switched to tkinter and then kivy. coded in visual studio and pycharm.
 
 
 
@@ -111,35 +111,13 @@ I wanted to create a simple calculator application that is easy to navigate arou
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Simply download any of the versions you would like the highest one is the latest version of the application.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+The application will soon be on IOS appstore and Android i will update everyone once it becomes available.
 
 
 <!-- USAGE EXAMPLES -->
@@ -156,10 +134,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Maths games to test your knowledege. 
+- [ ] Practice questions.
+- [ ] Easy number input with 5 methods to choose from.
+
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
