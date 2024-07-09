@@ -31,7 +31,7 @@
 <div align="center">
   <a href="![image](https://github.com/SlickAsAlways/Calculator-Application-kivy/assets/71338902/71bdfb8e-48e6-4a59-b6d6-7707403018b9)
 ">
-    <img src=logo
+    <img src=logo.png
 " alt="Logo" width="80" height="80">
   </a>
 
